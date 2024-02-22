@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> .Crypt</title>
-		<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+		
 	</head>
 	<style>
 		body {
@@ -99,9 +99,7 @@
 		<div class=container>
 			<hr>
 		</div>
-<div class="container">
-    <span id="visitorCount"></span>
-</div>
+
 
 		<div class="container" id=divEncryptfile>
 			<h2>Encrypt a File</h2>
@@ -199,45 +197,6 @@
 		<BR>
 	</body>
 </html>
-<script>
-function incrementVisitorCount() {
-    if (typeof(Storage) !== "undefined") {
-        if (!localStorage.getItem('visited')) {
-            localStorage.setItem('visited', 'true');
-            if (localStorage.visitorCount) {
-                localStorage.visitorCount = Number(localStorage.visitorCount) + 1;
-            } else {
-                localStorage.visitorCount = 1;
-            }
-            document.getElementById("visitorCount").innerHTML = "Visitors: " + localStorage.visitorCount;
-        }
-    } else {
-        document.getElementById("visitorCount").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-
-       
-function displayVisitorCount() {
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.visitorCount) {
-            document.getElementById("visitorCount").innerHTML = "Visitors: " + localStorage.visitorCount;
-        } else {
-            document.getElementById("visitorCount").innerHTML = "No visitors yet.";
-        }
-    } else {
-        document.getElementById("visitorCount").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-
-
-
-window.onload = function() {
-    incrementVisitorCount();
-    displayVisitorCount();
-};
-    </script>
-
-
 <script type="text/javascript">
 	var mode=null;
 	var objFile=null;
