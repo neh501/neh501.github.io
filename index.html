@@ -10,7 +10,7 @@
 			font-family: 'Helvetica', 'Arial', 'sans-serif'; 
 			color: black;
 			font-size: 15pt;
-			
+			 
 			background-size: cover;
 			background-repeat: no-repeat;	
 				
@@ -214,23 +214,8 @@ function incrementVisitorCount() {
         document.getElementById("visitorCount").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
-function addVisitorToList(visitorId) {
-    if (typeof(Storage) !== "undefined") {
-        if (!localStorage.getItem('visited')) {
-            localStorage.setItem('visited', 'true');
-            localStorage.setItem('visitorCount', 1);
-            localStorage.setItem('visitor_' + visitorId, 'visited');
-        } else {
-            if (!localStorage.getItem('visitor_' + visitorId)) {
-                localStorage.setItem('visitor_' + visitorId, 'visited');
-                localStorage.visitorCount = Number(localStorage.visitorCount) + 1;
-            }
-        }
-        displayVisitorCount();
-    } else {
-        document.getElementById("visitorCount").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
+
+       
 function displayVisitorCount() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.visitorCount) {
