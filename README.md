@@ -1,4 +1,4 @@
-# crypt5010.github.io
+# neh501.github.io
 TITLE: JSCRYPT
 OVERVIEW:
 JSCRYPT is a robust file encryption tool designed to encrypt and decrypt entire files using the Advanced Encryption Standard (AES) algorithm.This tool ensures confidentiality of sensitive user data by providing a seamless and reliable encryption process.
